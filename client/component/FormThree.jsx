@@ -2,9 +2,10 @@ class FormThree extends React.Component {
     constructor(props) {
         super(props)
         this.state={
-            name:"",
-            email:"",
-            password:""
+            cardNumber:'',
+            expiryDate:'',
+            cvv:'',
+            zipcode:''
         };
         this.next = this.next.bind(this);
     }
@@ -12,17 +13,20 @@ class FormThree extends React.Component {
     render() {
         return (
             <div>
-                <h2>Create Account</h2>
+                <h2>Credit Card :</h2>
                 <form>
-                    <label>Name<input name="name"></input></label>
+                    <label>Card Number<input name="crediNo"></input></label>
                     <br />
                     <br />
-                    <label>Email<input name="name" type="email"></input></label>
+                    <label>Expiry Date <input name="name" type="date"></input></label>
                     <br />
                     <br />
-                    <label>Password<input name="name" type="password"></input></label>
+                    <label>CVV<input name="cvv"></input></label>
+                    <br />
+                    <br />
+                    <label>Billing Zip Code<input name="cvv"></input></label>
                     <hr />
-                    <button class="nextForm" onClick="this.next">Next</button>
+                    <button class="nextForm" onClick={this.next}>Next</button>
 
                 </form>
             </div>
@@ -30,4 +34,4 @@ class FormThree extends React.Component {
     }
 }
 
-export default FormTwo;
+export default FormThree;

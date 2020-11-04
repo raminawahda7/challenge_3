@@ -1,6 +1,11 @@
 class FormOne extends React.Component {
     constructor(props) {
         super(props)
+        this.state={
+            name:"",
+            email:"",
+            password:""
+        };
         this.next = this.next.bind(this);
     }
     render() {
@@ -16,7 +21,7 @@ class FormOne extends React.Component {
                     <br />
                     <label>Password<input name="password" type="password"></input></label>
                     <hr />
-                    <button class="nextForm" onClick="this.next">Next</button>
+                    <button class="nextForm" onClick={this.next}>Next</button>
 
                 </form>
             </div>
@@ -24,4 +29,4 @@ class FormOne extends React.Component {
     }
 }
 
-export default FormOne;
+export default FormOne

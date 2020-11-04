@@ -1,16 +1,4 @@
+import FormOne from './FormOne.js';
+import FormTwo from './FormTwo.js';
+import FormThree from './FormThree.js';
 
-class App extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            // name:'',
-            // email:'',
-            // password:'',
-        };
-    }
-    render() {
-        return {
-            // add all classes and components here ?
-        }
-    }
-}

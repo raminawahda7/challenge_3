@@ -2,10 +2,13 @@ class FormTwo extends React.Component {
     constructor(props) {
         super(props)
         this.state={
-            name:"",
-            email:"",
-            password:""
-        };
+            line1:'',
+            line2:'',
+            city:'',
+            statee:'',
+            zipcode:'',
+            phoneNo:''
+        }
         this.next = this.next.bind(this);
     }
 
@@ -31,7 +34,7 @@ class FormTwo extends React.Component {
                     <br />
                     <label>Phone Number<input name="phoneNum" ></input></label>
                     <hr />
-                    <button class="nextForm" onClick="this.next">Next</button>
+                    <button class="nextForm" onClick={this.next}>Next</button>
 
                 </form>
             </div>
