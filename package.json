@@ -1,0 +1,30 @@
+{
+  "name": "challenge_3",
+  "version": "1.0.0",
+  "description": " Multistep Checkout Experience",
+  "main": "server.js",
+  "scripts": {
+    "test": "",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raminawahda7/challenge_3.git"
+  },
+  "keywords": [
+    "react",
+    "checkout"
+  ],
+  "author": "raminawahda7",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raminawahda7/challenge_3/issues"
+  },
+  "homepage": "https://github.com/raminawahda7/challenge_3#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "babel-watch": "^7.0.0"
+  }
+}
