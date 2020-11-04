@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const port = 5000; // To avoid conflict because react running os the same port number.
-// app.use('/static', express.static(__dirname + '/client')); // server.js and components are in the same folder
+app.use(express.static(__dirname + '/public')); // server.js and components are in the same folder
 
 // const App = require ('./client/App.jsx')
 
